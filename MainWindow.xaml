@@ -1,0 +1,61 @@
+﻿<Window x:Class="Java_lang_Runtime_exec_payload_encode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Java_lang_Runtime_exec_payload_encode"
+        mc:Ignorable="d"
+        Title="java_lang_Ranutime_exec_payload_encode   v1.1" Height="314" Width="521" Visibility="Visible" ResizeMode="CanMinimize" HorizontalAlignment="Left" VerticalAlignment="Top" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="325*"/>
+            <ColumnDefinition Width="188*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="input" HorizontalAlignment="Left" Height="49" Margin="100,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="19,62,0,0" TextWrapping="Wrap" Width="76" Height="62" VerticalAlignment="Top" ><Run/><LineBreak/><Run Text="Comman"/><Run Text="d"/><Run Text="："/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="18,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17.813" Width="77"><Run Text="Input Type"/><Run Text="："/></TextBlock>
+        <RadioButton x:Name="bash" Content="Bash"  HorizontalAlignment="Left" Margin="100,21.813,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Bash_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="powershell" Content="Powershell" HorizontalAlignment="Left" Margin="198,21.813,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Powershell_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="python" Content="Python" HorizontalAlignment="Left"  Margin="4,21.813,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Python_Checked" Grid.Column="1">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton x:Name="perl" Content="Perl" HorizontalAlignment="Left" Margin="108,21.813,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Checked="Perl_Checked" Grid.Column="1">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <TextBox x:Name="output" HorizontalAlignment="Left" Height="131" Margin="100,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
+        <Button Content="Try It" HorizontalAlignment="Left" Height="92" Margin="19,155,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
+
+    </Grid>
+</Window>

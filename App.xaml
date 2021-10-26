@@ -1,0 +1,9 @@
+﻿<Application x:Class="Java_lang_Runtime_exec_payload_encode.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Java_lang_Runtime_exec_payload_encode"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
